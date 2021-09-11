@@ -29,6 +29,25 @@
             }
         });
 
+        $(document).on("click", function(e) {
+            if ($(e.target).is(".dropdown-menu") === false) {
+                $ ('.login-form').removeClass ('display-hide').addClass ('display-block');
+                $ ('.forgot-password').removeClass ('display-block').addClass ('display-hide');
+            }
+        });
+
+
+                // Canvas menu add class
+        $ (".navigation-trigger").on ("click", function () {
+            $ (".navigation, .off-canvas-overlay").addClass ("toggled");
+            return false;
+        });
+
+        // Canvas menu remove class
+        $ (".menu-close, .off-canvas-overlay").on ("click", function () {
+            $ (".navigation, .off-canvas-overlay").removeClass ("toggled");
+        });
+
         
     });
 
