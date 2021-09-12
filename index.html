@@ -9,8 +9,10 @@
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/popper.min.js">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/h">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
@@ -32,7 +34,7 @@
                             <li>
                                 <button type="button" class="btn btn-secondary btn-g dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Register </button>
                                 <div class="dropdown-menu dropdown-menu-right" onclick="event.stopPropagation()" aria-labelledby="triggerId">
-                                    <form class="dropdown-form" action="">
+                                    <form class="dropdown-form">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Email Address">
                                         </div>
@@ -74,7 +76,7 @@
                             <li>
                                 <button type="button" class="btn btn-secondary btn-g dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Login </button>
                                 <div class="dropdown-menu dropdown-menu-right" onclick="event.stopPropagation()" aria-labelledby="triggerId">
-                                    <form class="dropdown-form login-form" action="">
+                                    <form class="dropdown-form login-form">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Email Address">
                                         </div>
@@ -206,11 +208,188 @@
         </div>
 
         <div class="search-action">
-            
+            <div class="container">
+                <div class="search-area">
+                    <div class="action-search-box">
+                        <form>
+                            <input class="big-view" type="text" placeholder="Search by neighborhood, city, zip or address..."><!-- For desktop -->
+                            <input class="mobile" type="text" placeholder="Search..."><!-- For mobile -->
+                        </form>
+                    </div>
+                    <div class="right-part">
+                        <div class="action-item-sort">
+                            <div class="dropdown hierarchy-select" id="example">
+                                <span class="action-header__small">Sort by :</span>
+                                <button type="button" class="btn btn-secondary dropdown-toggle search-btn" id="example-two-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu" aria-labelledby="example-two-button">
+                                    <div class="hs-searchbox">
+                                        <input type="text" class="form-control" autocomplete="off">
+                                    </div>
+                                    <div class="hs-menu-inner">
+                                        <a class="dropdown-item" data-value="" data-default-selected="" href="#">All colors</a>
+                                        <a class="dropdown-item" data-value="1" href="#">Red</a>
+                                        <a class="dropdown-item" data-value="2" href="#">Orange</a>
+                                        <a class="dropdown-item" data-value="3" href="#">Yellow</a>
+                                        <a class="dropdown-item" data-value="4" href="#">Green</a>
+                                        <a class="dropdown-item" data-value="5" href="#">Blue</a>
+                                        <a class="dropdown-item" data-value="6" href="#">Purple</a>
+                                        <a class="dropdown-item" data-value="7" href="#">Pink</a>
+                                        <a class="dropdown-item" data-value="8" href="#">Brown</a>
+                                        <a class="dropdown-item" data-value="9" href="#">Black</a>
+                                        <a class="dropdown-item" data-value="10" href="#">Grey</a>
+                                        <a class="dropdown-item" data-value="11" href="#">White</a>
+                                    </div>
+                                </div>
+                                <input class="d-none" name="example_two" readonly="readonly" aria-hidden="true" type="text"/>
+                            </div>
+
+                            <div class="action-item-views">
+                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-map" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
+        <div class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Trending Ads </h3>
+                    <a href="categories.html" class="btn btn-md btn-primary">Show More Items <b>24727</b> <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="featured-products-area">
 
+
+                    <div class="item-grid highlight border-red">
+                        <div class="item-badge-grid premium-ads">
+                            <p>hot</p>
+                        </div>
+                        <a href="single.html">
+                            <div class="item-img-grid">
+                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
+                                <div class="item-title">
+                                    <h4>Lorem Ipsum is simply</h4>
+                                    <h3>$ 64.5000</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="item-meta">
+                            <ul>
+                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+                                <li class="item-cat"><i class="fa fa-car"></i> <a href="categories.html">Cars</a> , <a href="categories.html">Car Parts</a></li>
+                                <li class="item-location"><a href="categories.html"><i class="fa fa-map-marker"></i> Augusta </a></li>
+                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-grid highlight border-red">
+                        <div class="item-badge-grid premium-ads">
+                            <p>hot</p>
+                        </div>
+                        <a href="single.html">
+                            <div class="item-img-grid">
+                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
+                                <div class="item-title">
+                                    <h4>Lorem Ipsum is simply</h4>
+                                    <h3>$ 64.5000</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="item-meta">
+                            <ul>
+                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+                                <li class="item-cat"><i class="fa fa-car"></i> <a href="categories.html">Cars</a> , <a href="categories.html">Car Parts</a></li>
+                                <li class="item-location"><a href="categories.html"><i class="fa fa-map-marker"></i> Augusta </a></li>
+                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-grid highlight border-red">
+                        <div class="item-badge-grid premium-ads">
+                            <p>hot</p>
+                        </div>
+                        <a href="single.html">
+                            <div class="item-img-grid">
+                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
+                                <div class="item-title">
+                                    <h4>Lorem Ipsum is simply</h4>
+                                    <h3>$ 64.5000</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="item-meta">
+                            <ul>
+                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+                                <li class="item-cat"><i class="fa fa-car"></i> <a href="categories.html">Cars</a> , <a href="categories.html">Car Parts</a></li>
+                                <li class="item-location"><a href="categories.html"><i class="fa fa-map-marker"></i> Augusta </a></li>
+                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-grid highlight border-red">
+                        <div class="item-badge-grid premium-ads">
+                            <p>hot</p>
+                        </div>
+                        <a href="single.html">
+                            <div class="item-img-grid">
+                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
+                                <div class="item-title">
+                                    <h4>Lorem Ipsum is simply</h4>
+                                    <h3>$ 64.5000</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="item-meta">
+                            <ul>
+                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+                                <li class="item-cat"><i class="fa fa-car"></i> <a href="categories.html">Cars</a> , <a href="categories.html">Car Parts</a></li>
+                                <li class="item-location"><a href="categories.html"><i class="fa fa-map-marker"></i> Augusta </a></li>
+                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-grid highlight border-red">
+                        <div class="item-badge-grid premium-ads">
+                            <p>hot</p>
+                        </div>
+                        <a href="single.html">
+                            <div class="item-img-grid">
+                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
+                                <div class="item-title">
+                                    <h4>Lorem Ipsum is simply</h4>
+                                    <h3>$ 64.5000</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="item-meta">
+                            <ul>
+                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+                                <li class="item-cat"><i class="fa fa-car"></i> <a href="categories.html">Cars</a> , <a href="categories.html">Car Parts</a></li>
+                                <li class="item-location"><a href="categories.html"><i class="fa fa-map-marker"></i> Augusta </a></li>
+                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+            </div>
+        </div>
 
 
 
@@ -221,7 +400,7 @@
                     <div class="col-sm-4">
                         <div class="widget footer-about">
                             <a class="logo" href="">
-                                <div class="logo__text">
+                                <div class="logo-text">
                                     <span>Roost</span>
                                     <span>Material Design Real Estate</span>
                                 </div>
@@ -248,15 +427,15 @@
 
                             <a href="">
                                 Aenean lacinia bibendum nulla sed
-                                <small>On 2016/06/20 at 6:00 PM</small>
+                                <small>On <span class="date">2016/06/20</span> at <span class="time">6:00 PM</span></small>
                             </a>
                             <a href="">
                                 Vestibulum id ligula porta felis euismod semper
-                                <small>On 2016/06/18 at 7:12 PM</small>
+                                <small>On <span class="date">2016/06/20</span> at <span class="time">6:00 PM</span></small>
                             </a>
                             <a href="">
                                 Etiam porta sem malesuada magna mollis euismod
-                                <small>On 2016/06/10 at 12:59 PM</small>
+                                <small>On <span class="date">2016/06/20</span> at <span class="time">6:00 PM</span></small>
                             </a>
                         </div>
                     </div>
@@ -288,10 +467,13 @@
         </footer>
 
 
+
+
 		<!-- JS here -->
         <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/h.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
