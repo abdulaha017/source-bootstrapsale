@@ -53,12 +53,22 @@
             width: 'auto'
         });
 
-          $(window).scroll(function(){
+
+// fixed nav bar in jquery
+$(window).scroll(function() {
+    if($(this).scrollTop() > 150) {
+        $('.search-action').addClass('fixedElement');
+    } else {
+        $('.search-action').removeClass('fixedElement');
+    };
+});
+
+        $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
-              $('.scroll-to-top').fadeIn();
+                $('.scroll-to-top').fadeIn();
             }
             else {
-              $('.scroll-to-top').fadeOut();
+                $('.scroll-to-top').fadeOut();
             }
           });
 
