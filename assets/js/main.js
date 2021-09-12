@@ -37,7 +37,7 @@
         });
 
 
-                // Canvas menu add class
+        // Canvas menu add class
         $ (".navigation-trigger").on ("click", function () {
             $ (".navigation, .off-canvas-overlay").addClass ("toggled");
             return false;
@@ -48,20 +48,38 @@
             $ (".navigation, .off-canvas-overlay").removeClass ("toggled");
         });
 
+
+        // filter add class
+        $ (".advanced-search-icon").on ("click", function () {
+            $ (".advanced-search, .off-canvas-overlay").addClass ("toggled");
+            return false;
+        });
+
+        // filter remove class
+        $ (".filter-close, .off-canvas-overlay").on ("click", function () {
+            $ (".advanced-search, .off-canvas-overlay").removeClass ("toggled");
+            return false;
+        });
+
+
         $('#example').hierarchySelect({
+            hierarchy: false,
+            width: 'auto'
+        });
+        $('#example-owner').hierarchySelect({
             hierarchy: false,
             width: 'auto'
         });
 
 
-// fixed nav bar in jquery
-$(window).scroll(function() {
-    if($(this).scrollTop() > 150) {
-        $('.search-action').addClass('fixedElement');
-    } else {
-        $('.search-action').removeClass('fixedElement');
-    };
-});
+        // fixed nav bar in jquery
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 150) {
+                $('.search-action').addClass('fixedElement');
+            } else {
+                $('.search-action').removeClass('fixedElement');
+            };
+        });
 
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
@@ -76,7 +94,64 @@ $(window).scroll(function() {
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         });
-        
+
+
+
+
+
+// 1. Price Range
+
+if ($('#property-price-range')[0]) {
+    var propertyPriceRange = document.getElementById('property-price-range');
+    var propertyPriceRangeValues = [
+        document.getElementById('property-price-upper'),
+        document.getElementById('property-price-lower')
+    ]
+
+    noUiSlider.create (propertyPriceRange, {
+        start: [12000, 70000],
+        connect: true,
+        range: {
+            'min': 12000,
+            'max': 70000
+        }
+    });
+
+    propertyPriceRange.noUiSlider.on('update', function( values, handle ) {
+        propertyPriceRangeValues[handle].innerHTML = values[handle];
+    });
+}
+
+// 2. Property Area Size
+
+if ($('#property-area-range')[0]) {
+    var propertyAreaRange = document.getElementById('property-area-range');
+    var propertyAreaRangeValues = [
+        document.getElementById('property-area-upper'),
+        document.getElementById('property-area-lower')
+    ]
+
+    noUiSlider.create (propertyAreaRange, {
+        start: [3500, 10000],
+        connect: true,
+        range: {
+            'min': 3500,
+            'max': 10000
+        }
+    });
+
+    propertyAreaRange.noUiSlider.on('update', function( values, handle ) {
+        propertyAreaRangeValues[handle].innerHTML = values[handle];
+    });
+}
+
+
+
+
+
+
+
+  
     });
 
 })(jQuery);

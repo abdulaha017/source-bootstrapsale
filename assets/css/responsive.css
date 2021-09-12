@@ -15,6 +15,18 @@
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
+.action-search-box {
+    min-width: 325px;
+}
+.action-item-views a {
+    font-size: 20px;
+}
+.item-grid {
+    width: 46%;
+    margin: 0 2% 30px;
+}
+
+
 
 }
 
@@ -94,11 +106,79 @@ ul.dropdown-menu li a {
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
+ul.left-area li:nth-child(1), ul.left-area li:nth-child(2) {
+    display: none;
+}
+ul.left-area a {
+    padding: 12px !important;
+}
+.header-top .btn-g {
+    font-size: 12px;
+}
+.right-part {
+    display: none;
+}
+.action-search-box {
+    margin-left: 0;
+    min-width: 100%;
+}
+input.big-view {
+    display: none;
+}
+input.mobile {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 4px 6px;
+    height: 35px;
+    font-size: 14px;
+    background: #D11919;
+    color: #fff;
+}
+.section-header {
+    display: block;
+}
+.item-grid {
+    width: 100%;
+    margin: 0 1% 30px;
+}
+.footer-top {
+    display: none;
+}
+.featured-products {
+    padding: 60px 0 0 !important;
+}
+
+.footer-bottom a {
+    padding: 10px;
+    border-bottom: 1px solid rgb(255 255 255 / 22%);
+    color: #fff;
+}
+.footer-bottom a:last-child {
+    border-bottom: none;
+}
+span.footer-copyright {
+    margin: 20px 0 30px;
+}
+
+span.footer-copyright, .footer-bottom a {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+}
+footer {position: relative;}
+.scroll-to-top {
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
  
 }
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
+
  
 }
