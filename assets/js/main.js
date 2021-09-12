@@ -99,101 +99,97 @@
 
 
 
-// 1. Price Range
+        // 1. Price Range
 
-if ($('#property-price-range')[0]) {
-    var propertyPriceRange = document.getElementById('property-price-range');
-    var propertyPriceRangeValues = [
-        document.getElementById('property-price-upper'),
-        document.getElementById('property-price-lower')
-    ]
+        if ($('#property-price-range')[0]) {
+            var propertyPriceRange = document.getElementById('property-price-range');
+            var propertyPriceRangeValues = [
+                document.getElementById('property-price-upper'),
+                document.getElementById('property-price-lower')
+            ]
 
-    noUiSlider.create (propertyPriceRange, {
-        start: [12000, 70000],
-        connect: true,
-        range: {
-            'min': 12000,
-            'max': 70000
+            noUiSlider.create (propertyPriceRange, {
+                start: [12000, 70000],
+                connect: true,
+                range: {
+                    'min': 12000,
+                    'max': 70000
+                }
+            });
+
+            propertyPriceRange.noUiSlider.on('update', function( values, handle ) {
+                propertyPriceRangeValues[handle].innerHTML = values[handle];
+            });
         }
-    });
 
-    propertyPriceRange.noUiSlider.on('update', function( values, handle ) {
-        propertyPriceRangeValues[handle].innerHTML = values[handle];
-    });
-}
+        // 2. Property Area Size
 
-// 2. Property Area Size
+        if ($('#property-area-range')[0]) {
+            var propertyAreaRange = document.getElementById('property-area-range');
+            var propertyAreaRangeValues = [
+                document.getElementById('property-area-upper'),
+                document.getElementById('property-area-lower')
+            ]
 
-if ($('#property-area-range')[0]) {
-    var propertyAreaRange = document.getElementById('property-area-range');
-    var propertyAreaRangeValues = [
-        document.getElementById('property-area-upper'),
-        document.getElementById('property-area-lower')
-    ]
+            noUiSlider.create (propertyAreaRange, {
+                start: [3500, 10000],
+                connect: true,
+                range: {
+                    'min': 3500,
+                    'max': 10000
+                }
+            });
 
-    noUiSlider.create (propertyAreaRange, {
-        start: [3500, 10000],
-        connect: true,
-        range: {
-            'min': 3500,
-            'max': 10000
+            propertyAreaRange.noUiSlider.on('update', function( values, handle ) {
+                propertyAreaRangeValues[handle].innerHTML = values[handle];
+            });
         }
-    });
 
-    propertyAreaRange.noUiSlider.on('update', function( values, handle ) {
-        propertyAreaRangeValues[handle].innerHTML = values[handle];
-    });
-}
+        // 3. Lot Size
 
-// 3. Lot Size
+        if ($('#property-lot-range')[0]) {
+            var propertyLotRange = document.getElementById('property-lot-range');
+            var propertyLotRangeValues = [
+                document.getElementById('property-lot-upper'),
+                document.getElementById('property-lot-lower')
+            ]
 
-if ($('#property-lot-range')[0]) {
-    var propertyLotRange = document.getElementById('property-lot-range');
-    var propertyLotRangeValues = [
-        document.getElementById('property-lot-upper'),
-        document.getElementById('property-lot-lower')
-    ]
+            noUiSlider.create (propertyLotRange, {
+                start: [1000, 5000],
+                connect: true,
+                range: {
+                    'min': 1000,
+                    'max': 5000
+                }
+            });
 
-    noUiSlider.create (propertyLotRange, {
-        start: [1000, 5000],
-        connect: true,
-        range: {
-            'min': 1000,
-            'max': 5000
+            propertyLotRange.noUiSlider.on('update', function( values, handle ) {
+                propertyLotRangeValues[handle].innerHTML = values[handle];
+            });
         }
-    });
 
-    propertyLotRange.noUiSlider.on('update', function( values, handle ) {
-        propertyLotRangeValues[handle].innerHTML = values[handle];
-    });
-}
+        // 4. Year Built
 
-// 3. Year Built
+        if ($('#property-year-built')[0]) {
+            var propertyYbRange = document.getElementById('property-year-built');
+            var propertyYbRangeValues = [
+                document.getElementById('property-yb-upper'),
+                document.getElementById('property-yb-lower')
+            ]
 
-if ($('#property-year-built')[0]) {
-    var propertyYbRange = document.getElementById('property-year-built');
-    var propertyYbRangeValues = [
-        document.getElementById('property-yb-upper'),
-        document.getElementById('property-yb-lower')
-    ]
+            noUiSlider.create (propertyYbRange, {
+                start: [1990, 2016],
+                connect: true,
+                range: {
+                    'min': 1990,
+                    'max': 2016
+                }
+            });
 
-    noUiSlider.create (propertyYbRange, {
-        start: [1990, 2016],
-        connect: true,
-        range: {
-            'min': 1990,
-            'max': 2016
+            propertyYbRange.noUiSlider.on('update', function( values, handle ) {
+                propertyYbRangeValues[handle].innerHTML = Math.round(values[handle]);
+            });
         }
-    });
-
-    propertyYbRange.noUiSlider.on('update', function( values, handle ) {
-        propertyYbRangeValues[handle].innerHTML = Math.round(values[handle]);
-    });
-}
-
-
-
-
 
   
     });

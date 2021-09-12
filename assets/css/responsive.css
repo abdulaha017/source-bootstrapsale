@@ -137,6 +137,7 @@ input.mobile {
 }
 .section-header {
     display: block;
+    text-align: center;
 }
 .item-grid {
     width: 100%;
