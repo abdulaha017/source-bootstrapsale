@@ -973,7 +973,7 @@ p {}
 .advanced-search {
     position: fixed;
     right: -365px;
-    padding: 0 0 50px;
+    padding: 0 0 30px;
     width: 350px;
     background: #fff;
     box-shadow: 0 0 30px rgba(0,0,0,.1);
@@ -1079,7 +1079,7 @@ form.filter .dropdown.show {
     color: #fff;
     box-shadow: none;
 }
-[data-toggle=buttons]:not(.btn-group--light) .btn {
+.listing .btn {
     background-color: #EEEEEE;
     padding: 8px 13px;
     width: 120px;
@@ -1110,8 +1110,13 @@ form.filter .dropdown.show {
 }
 
 
-
-
+aside.advanced-search.toggled .form-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+.input-slider-values {
+    margin-bottom: 14px;
+}
 
 
 
@@ -1125,7 +1130,7 @@ form.filter .dropdown.show {
 
 
 .noUi-horizontal {
-    height: 2px;
+    height: 1px;
     margin-left: 3px;
 }
 .noUi-background {
@@ -1153,8 +1158,16 @@ form.filter .dropdown.show {
     bottom: 0;
 }
 
+div#property-lot-range .noUi-base:first-child .noUi-handle,
+div#property-year-built .noUi-base:first-child .noUi-handle,
+div#property-area-range .noUi-base:first-child .noUi-handle,
+div#property-price-range .noUi-base:first-child .noUi-handle {
+    display: none;
+}
+
 .noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle {
     width: 15px;
+    top: -8px;
     height: 15px;
     border: 0;
     border-radius: 100%;
@@ -1187,14 +1200,38 @@ form.filter .dropdown.show {
     position: relative;
     background-color: #03A9F4;
 }
+.noUi-base, .noUi-handle {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.btn-group .btn {
+    background: #EEEEEE;
+    color: #000;
+    font-weight: 500;
+}
 
 
 
+.aside-footer{
+    padding: 30px 35px;
+}
+.aside-footer .search-btn {
+    background: #fdb103;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: 400;
+}
 
-
-
-
-
+.aside-footer .btn-link {
+    background: transparent;
+    color: #222;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 14px;
+    margin: 0 6px;
+    text-decoration: none;
+}
 
 
 

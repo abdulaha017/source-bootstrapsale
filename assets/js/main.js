@@ -145,7 +145,51 @@ if ($('#property-area-range')[0]) {
     });
 }
 
+// 3. Lot Size
 
+if ($('#property-lot-range')[0]) {
+    var propertyLotRange = document.getElementById('property-lot-range');
+    var propertyLotRangeValues = [
+        document.getElementById('property-lot-upper'),
+        document.getElementById('property-lot-lower')
+    ]
+
+    noUiSlider.create (propertyLotRange, {
+        start: [1000, 5000],
+        connect: true,
+        range: {
+            'min': 1000,
+            'max': 5000
+        }
+    });
+
+    propertyLotRange.noUiSlider.on('update', function( values, handle ) {
+        propertyLotRangeValues[handle].innerHTML = values[handle];
+    });
+}
+
+// 3. Year Built
+
+if ($('#property-year-built')[0]) {
+    var propertyYbRange = document.getElementById('property-year-built');
+    var propertyYbRangeValues = [
+        document.getElementById('property-yb-upper'),
+        document.getElementById('property-yb-lower')
+    ]
+
+    noUiSlider.create (propertyYbRange, {
+        start: [1990, 2016],
+        connect: true,
+        range: {
+            'min': 1990,
+            'max': 2016
+        }
+    });
+
+    propertyYbRange.noUiSlider.on('update', function( values, handle ) {
+        propertyYbRangeValues[handle].innerHTML = Math.round(values[handle]);
+    });
+}
 
 
 
