@@ -1207,6 +1207,11 @@ div#property-price-range .noUi-base:first-child .noUi-handle {
     font-weight: 500;
 }
 
+.garages .btn-group .btn,
+.bathrooms .btn-group .btn,
+.bedrooms .btn-group .btn {
+    width: 55px;
+}
 
 
 .aside-footer{
@@ -1224,7 +1229,7 @@ div#property-price-range .noUi-base:first-child .noUi-handle {
     color: #222;
     font-size: 12px;
     font-weight: 500;
-    padding: 0 14px;
+    padding: 0 10px;
     margin: 0 6px;
     text-decoration: none;
 }

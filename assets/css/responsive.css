@@ -55,6 +55,15 @@
     overflow: auto;
 }
 
+.has-dropdown:hover a {
+    background: transparent;
+}
+
+.has-dropdown:hover a {
+    background: transparent;
+    padding: 0;
+}
+
 
 ul.navigation.toggled li {
     display: block !important;
@@ -67,9 +76,11 @@ ul.navigation.toggled li {
     display: block !important;
 }
 
-li.close-bar a {
+li.close-bar span {
     font-size: 22px !important;
     text-align: right;
+    display: block;
+    padding: 13px 30px;
 }
 
 li.active > a {
@@ -174,6 +185,40 @@ footer {position: relative;}
     right: 50%;
     transform: translate(50%, 0);
 }
+
+.advanced-search {
+    width: 300px;
+}
+.location label {
+    position: unset;
+}
+.filter-header ul.dropdown-menu {
+    display: none;
+}
+.filter-header .dropdown-menu.show {
+    display: block;
+}
+.listing .btn {
+    width: 114px;
+}
+.ownership .btn {
+    width: 80%;
+}
+.garages .btn-group .btn,
+.bathrooms .btn-group .btn,
+.bedrooms .btn-group .btn {
+    width: 0;
+    padding: 14px 24px;
+}
+.aside-footer .search-btn {
+    padding: 12px 13px;
+    font-size: 11px;
+}
+.aside-footer .btn-link {
+    padding: 0 6px;
+}
+
+
 
  
 }
