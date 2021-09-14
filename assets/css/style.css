@@ -879,7 +879,7 @@ button#example-two-button {
 
 .highlight {
     border-radius: 12px;
-    border: 2px solid #4611A7 !important;
+    border: 2px solid #ffff00 !important;
 }
 
 .item-grid {
@@ -912,7 +912,8 @@ p {}
 
 
 .item-badge-grid:hover {
-    background: #4D00E0;
+    background: #e4152f;
+    transition: 0.3s;
 }
 
 .item-badge-grid.premium-ads p {
