@@ -741,6 +741,10 @@ input.big-view {width: 100%;border: none;padding: 4px 6px;height: 35px;font-size
     color: #828282;
 }
 
+.action-item-views .active {
+    color: #2196F3;
+}
+
 .action-item-sort .hs-searchbox {
     width: 200px !important;
 }
