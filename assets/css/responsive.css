@@ -218,8 +218,27 @@ footer {position: relative;}
     padding: 0 6px;
 }
 
-
-
+section.pageHeader {
+    padding: 10px 0;
+}
+.pageHeader .page-title h2 {
+    font-size: 14px;
+}
+.pageHeader .page-title h2 {
+    line-height: 30px;
+}
+.pageHeader ol.breadcrumb li {
+    line-height: 30px;
+}
+.pageHeader ol.breadcrumb li+li::before {
+    padding: 0 4px;
+}
+.pageHeader ol.breadcrumb {
+    float: unset;
+}
+.inner-profile .form-group label {
+    text-align: left;
+}
  
 }
  

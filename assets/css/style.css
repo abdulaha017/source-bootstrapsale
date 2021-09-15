@@ -50,7 +50,6 @@ a:hover,
 	color: #2B96CC;
 	text-decoration: none;
 }
-a,
 button {
     color: #fdb103;
     outline: medium none;
@@ -1246,6 +1245,156 @@ div#property-price-range .noUi-base:first-child .noUi-handle {
     margin: 0 6px;
     text-decoration: none;
 }
+
+
+
+
+/*******************
+ * 
+ * Profile
+ ******************/
+
+section.pageHeader {
+    background: #f0f0f0;
+}
+
+.pageHeader .page-title {}
+
+.pageHeader .page-title h2 {
+    color: #797979;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 70px;
+}
+
+
+.pageHeader ol.breadcrumb {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    float: right;
+}
+
+.pageHeader ol.breadcrumb li {
+    padding: 0;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.pageHeader ol.breadcrumb li a {
+    color: #969696;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.pageHeader ol.breadcrumb .active {
+    color: #252525;
+}
+
+.pageHeader ol.breadcrumb li+li::before {
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.pageHeader ol.breadcrumb li+li::before {
+    padding: 0 10px;
+}
+
+
+
+/* user-profile-content */
+
+section.user-profile-content {
+    padding: 90px 0 60px 0;
+    background: #fff;
+}
+
+.inner-profile {
+    border: 3px solid #f0f0f0;
+    padding: 30px;
+}
+
+.inner-profile .box-title {
+    margin-bottom: 25px;
+}
+
+.inner-profile .box-title h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.thumbnail {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.inner-profile .thumbnail .btn-primary {
+    padding: 10px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+
+.inner-profile .form-horizontal .form-group {
+    margin-bottom: 0;
+}
+
+.inner-profile .form-group label {
+    color: #000;
+    margin-bottom: 0;
+    text-align: right;
+    font-size: 13px;
+    padding-top: 0;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inner-profile .form-control {
+    border-radius: 0;
+    background-color: #f0f0f0;
+    border: 0;
+    height: 44px;
+    line-height: 44px;
+    box-shadow: none;
+    padding: 13px 20px;
+    margin-bottom: 30px;
+}
+
+.inner-profile .form-control:focus {
+    box-shadow: none;
+    background: #eee;
+}
+
+.save-info {
+    border-radius: 0;
+    height: 45px;
+    font-size: 13px;
+    padding: 10px 15px;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
