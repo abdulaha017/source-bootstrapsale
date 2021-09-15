@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="assets/css/popper.min.js">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/fancybox.min.css">
         <link rel="stylesheet" href="assets/css/hierarchy-select.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -207,189 +210,224 @@
             </div>
         </div>
 
-        <div class="search-action">
+        <!-- pageHeader -->
+        <section class="pageHeader">
             <div class="container">
-                <div class="search-area">
-                    <div class="action-search-box">
-                        <form>
-                            <input class="big-view" type="text" placeholder="Search by neighborhood, city, zip or address..."><!-- For desktop -->
-                            <input class="mobile" type="text" placeholder="Search..."><!-- For mobile -->
-                        </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="page-title">
+                            <h2>PROFILE</h2>
+                        </div>
                     </div>
-                    <div class="right-part">
-                        <div class="action-item-sort">
-                            <div class="dropdown hierarchy-select" id="example">
-                                <span class="action-header__small">Sort by :</span>
-                                <button type="button" class="btn btn-secondary dropdown-toggle search-btn" id="example-two-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                <div class="dropdown-menu" aria-labelledby="example-two-button">
-                                    <div class="hs-searchbox">
-                                        <input type="text" class="form-control" autocomplete="off">
-                                    </div>
-                                    <div class="hs-menu-inner">
-                                        <a class="dropdown-item" data-value="" data-default-selected="" href="#">All colors</a>
-                                        <a class="dropdown-item" data-value="1" href="#">Red</a>
-                                        <a class="dropdown-item" data-value="2" href="#">Orange</a>
-                                        <a class="dropdown-item" data-value="3" href="#">Yellow</a>
-                                        <a class="dropdown-item" data-value="4" href="#">Green</a>
-                                        <a class="dropdown-item" data-value="5" href="#">Blue</a>
-                                        <a class="dropdown-item" data-value="6" href="#">Purple</a>
-                                        <a class="dropdown-item" data-value="7" href="#">Pink</a>
-                                        <a class="dropdown-item" data-value="8" href="#">Brown</a>
-                                        <a class="dropdown-item" data-value="9" href="#">Black</a>
-                                        <a class="dropdown-item" data-value="10" href="#">Grey</a>
-                                        <a class="dropdown-item" data-value="11" href="#">White</a>
-                                    </div>
-                                </div>
-                                <input class="d-none" name="example_two" readonly="readonly" aria-hidden="true" type="text"/>
-                            </div>
+                    <div class="col-md-6">
+                        <ol class="breadcrumb text-right">
+                            <li>
+                            <a href="index.html">Home</a>
+                            </li>
+                            <li class="active">SINGLE PRODUCT</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="action-item-views">
-                                <a class="active" href="#"><i class="fa fa-th" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-th-list" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-map" aria-hidden="true"></i></a>
+
+        <section class="singleproduct-content">
+            <div class="container">
+                <div class="row single-product-media">
+                    <div class="col-lg-5 video-icon-wrap">
+                        <div class="video-icon">
+                            <a class="video-link" data-fancybox="" href="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1">
+                                <i class="fa fa-play play-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="slider product-big-thumb">
+                            <div class="big-thumb-single">
+                                <img src="assets/img/products/product-slide-big-01.jpg" alt="">
+                                <a data-fancybox="images" href="assets/img/products/product-slide-big-01.jpg" class="product-popup">
+                                    <div class="hover-icon"><i class="fa fa-plus"></i></div>
+                                </a>
+                            </div>
+                            <div class="big-thumb-single">
+                                <img src="assets/img/products/product-slide-big-02.jpg" alt="">
+                                <a data-fancybox="images" href="assets/img/products/product-slide-big-02.jpg" class="product-popup">
+                                    <div class="hover-icon"><i class="fa fa-plus"></i></div>
+                                </a>
+                            </div>
+                            <div class="big-thumb-single">
+                                <img src="assets/img/products/product-slide-big-03.jpg" alt="">
+                                <a data-fancybox="images" href="assets/img/products/product-slide-big-03.jpg" class="product-popup">
+                                    <div class="hover-icon"><i class="fa fa-plus"></i></div>
+                                </a>
+                            </div>
+                            <div class="big-thumb-single">
+                                <img src="assets/img/products/product-slide-big-04.jpg" alt="">
+                                <a data-fancybox="images" href="assets/img/products/product-slide-big-04.jpg" class="product-popup">
+                                    <div class="hover-icon"><i class="fa fa-plus"></i></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slider product-sm-thumb">
+                            <div class="small-thumb-single">
+                                <img src="assets/img/products/product-slide-big-01.jpg" alt="">
+                            </div>
+                            <div class="small-thumb-single">
+                                <img src="assets/img/products/product-slide-big-02.jpg" alt="">
+                            </div>
+                            <div class="small-thumb-single">
+                                <img src="assets/img/products/product-slide-big-03.jpg" alt="">
+                            </div>
+                            <div class="small-thumb-single">
+                                <img src="assets/img/products/product-slide-big-04.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="media-body">
+                            <ul>
+                                <li class="mb-4 mb-md-0">
+                                    <a href="index.html"><i class="fa fa-reply" aria-hidden="true"></i>
+                                    Continue Shopping </a>
+                                </li>
+
+                                <li class="share-all mr-0">
+                                    <a class="social-link" href="javascript:void(0)"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    Share This </a>
+
+                                    <span class="all-link">
+                                        <a class="share-icon" href="javascript:void(0)">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+
+                                        <a class="share-icon" href="javascript:void(0)">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+
+                                        <a class="share-icon" href="javascript:void(0)">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+
+                                        <a class="share-icon" href="javascript:void(0)">
+                                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                          <h2>Old Skool Navy</h2>
+                          <h3>$149</h3>
+                          <p>Mauris lobortis augue ex, ut faucibus nisi mollis ac. Sed volutpat scelerisque ex ut ullamcorper. Cras at velit quis sapien dapibus laoreet a id odio. Sed sit amet accumsan ante, eu congue metus. Aenean eros tortor, cursus quis feugiat sed vestibulum.</p>
+                          <a href="#" class="btn btn-primary cart-btn">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-related">
+                    <h4>Related Products</h4>
+                  </div>
+                <div class="row releted-products">
+                    <div class="col-md-3 col-12">
+                        <div class="releted-product">
+                            <div class="product-image">
+                                <img src="assets/img/products/products-01.jpg" alt="products-img" />
+                                <div class="product-hover">
+                                    <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="modal" href=".quick-view"><i class="fa fa-eye"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Nike Sportswear</h5>
+                                <h3>$199</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="releted-product">
+                            <div class="product-image">
+                                <img src="assets/img/products/products-02.jpg" alt="products-img" />
+                                <div class="product-hover">
+                                    <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="modal" href=".quick-view"><i class="fa fa-eye"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Nike Sportswear</h5>
+                                <h3>$199</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="releted-product">
+                            <div class="product-image">
+                                <img src="assets/img/products/products-03.jpg" alt="products-img" />
+                                <div class="product-hover">
+                                    <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="modal" href=".quick-view"><i class="fa fa-eye"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Nike Sportswear</h5>
+                                <h3>$199</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="releted-product">
+                            <div class="product-image">
+                                <img src="assets/img/products/products-04.jpg" alt="products-img" />
+                                <div class="product-hover">
+                                    <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="modal" href=".quick-view"><i class="fa fa-eye"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Nike Sportswear</h5>
+                                <h3>$199</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="featured-products">
-            <div class="container">
-                <div class="section-header">
-                    <h3>Trending Ads </h3>
-                    <!-- <a href="#" class="btn btn-md btn-primary">Show More Items <b>24727</b> <i class="fa fa-arrow-right"></i></a> -->
-                </div>
-                <div class="featured-products-area">
-
-
-                    <div class="item-grid highlight border-red">
-                        <div class="item-badge-grid premium-ads">
-                            <p>hot</p>
-                        </div>
-                        <a href="#">
-                            <div class="item-img-grid">
-                                <img alt="" src="assets/img/product/1.jpg" class="img-responsive img-center">
-                                <div class="item-title">
-                                    <h4>Lorem Ipsum is simply</h4>
-                                    <h3>$ 64.5000</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="item-meta">
-                            <ul>
-                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item-grid highlight border-red">
-                        <div class="item-badge-grid premium-ads">
-                            <p>hot</p>
-                        </div>
-                        <a href="#">
-                            <div class="item-img-grid">
-                                <img alt="" src="assets/img/product/2.jpg" class="img-responsive img-center">
-                                <div class="item-title">
-                                    <h4>Lorem Ipsum is simply</h4>
-                                    <h3>$ 64.5000</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="item-meta">
-                            <ul>
-                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="categories.html">Car Parts</a></li>
-                                <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item-grid highlight border-red">
-                        <div class="item-badge-grid premium-ads">
-                            <p>hot</p>
-                        </div>
-                        <a href="#">
-                            <div class="item-img-grid">
-                                <img alt="" src="assets/img/product/5.jpg" class="img-responsive img-center">
-                                <div class="item-title">
-                                    <h4>Lorem Ipsum is simply</h4>
-                                    <h3>$ 64.5000</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="item-meta">
-                            <ul>
-                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item-grid highlight border-red">
-                        <div class="item-badge-grid premium-ads">
-                            <p>hot</p>
-                        </div>
-                        <a href="#">
-                            <div class="item-img-grid">
-                                <img alt="" src="assets/img/product/3.jpg" class="img-responsive img-center">
-                                <div class="item-title">
-                                    <h4>Lorem Ipsum is simply</h4>
-                                    <h3>$ 64.5000</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="item-meta">
-                            <ul>
-                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="item-grid highlight border-red">
-                        <div class="item-badge-grid premium-ads">
-                            <p>hot</p>
-                        </div>
-                        <a href="#">
-                            <div class="item-img-grid">
-                                <img alt="" src="assets/img/product/4.jpg" class="img-responsive img-center">
-                                <div class="item-title">
-                                    <h4>Lorem Ipsum is simply</h4>
-                                    <h3>$ 64.5000</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="item-meta">
-                            <ul>
-                                <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
+        </section>
 
 
 
-                </div>
-            </div>
-        </div>
 
         <div class="advanced-search-icon">
             <i class="fa fa-filter" aria-hidden="true"></i>
@@ -646,6 +684,8 @@
         <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/fancybox.min.js"></script>
         <script src="assets/js/hierarchy-select.js"></script>
         <script src="assets/js/nouislider.min.js"></script>
         <script src="assets/js/main.js"></script>

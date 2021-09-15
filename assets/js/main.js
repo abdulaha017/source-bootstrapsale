@@ -192,7 +192,26 @@
         }
 
 
+        // single product slider
 
+        $('.product-big-thumb').slick({
+            arrows: true,
+            asNavFor: '.product-sm-thumb',
+        });
+
+        $('.product-sm-thumb').slick({
+            arrows: true,
+            asNavFor: '.product-big-thumb',
+            dots: true,
+            focusOnSelect: true,
+            slidesToShow: 4,
+        });
+
+        // single product share
+
+        $(".social-link").click(function(){
+            $(".all-link").toggleClass("active");
+        });
 
 
   
