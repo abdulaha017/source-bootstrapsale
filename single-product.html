@@ -22,7 +22,7 @@
     <body>
         <div class="off-canvas-overlay"></div>
 
-        <!-- SIGN UP MODAL -->
+        <!-- LOG IN MODAL -->
 
         <div class="modal fade login-modal show" id="login" tabindex="-1" role="dialog"  aria-modal="true">
             <div class="modal-dialog">
@@ -41,12 +41,14 @@
                                 <label for="">Password</label>
                                 <input type="password" class="form-control">
                             </div>
-                            <div class="checkbox">
-                                <input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked="">
-                                <label for="checkbox-1" class="checkbox-custom-label form-check-label">Remember me</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Forgot Password?
+                                </label>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">log in</button>
-                            <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
+                            <button type="submit" class="btn btn-primary log-in-btn">log in</button>
+                            <button type="button" class="btn btn-link forgot-btn">Forgot Password?</button>
                         </form>
                     </div>
                 </div>
