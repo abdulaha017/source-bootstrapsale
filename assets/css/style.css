@@ -980,6 +980,31 @@ p {}
     padding: 20px;
 }
 
+.item-meta h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    min-height: 60px;
+}
+
+.item-meta ul {
+    min-height: 110px;
+    margin-bottom: 12px;
+}
+
+.item-meta li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.more-info {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: #E0A800;
+    border-radius: 8px;
+}
 
 /* advanced-search */
 
@@ -1736,11 +1761,72 @@ ul.text-warning i {
 
 .author-comment-area h6 {
     font-size: 17px !important;
+    text-transform: capitalize;
 }
 
 .author-comment-area .ReviewsPost {
     font-size: 13px !important;
 }
+
+
+
+
+
+/* Ratings star */
+
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+}
+
+/* The star of the show */
+.rate > label:before {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+
+/* Zero stars rating */
+.rate > label:last-child:before {
+    content: "\f006 "; /* empty star outline */
+}
+
+/* Half star trick */
+.rate .half:before {
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click + hover color */
+input:checked ~ label,
+label:hover, label:hover ~ label { color: #ffc107 !important;  } 
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover,
+input:checked ~ label:hover ~ label, 
+label:hover ~ input:checked ~ label { color: #ffc107;  } 
+
+
+
+
+
+
+
 
 .author-comment-area .form-group {
     margin: 0;
