@@ -42,6 +42,12 @@
 }
 
 
+
+#progressbar li {
+    padding-bottom: 25px;
+}
+
+
 }
 
  
@@ -284,12 +290,20 @@ section.pageHeader {
 
 #progressbar li {
     display: block;
-    padding-bottom: 15px;
-}
-#progressbar li:after {
-    display: none;
+    padding-bottom: 25px;
 }
 
+#progressbar li:after {
+    content: '\f078 ';
+    font-family: FontAwesome;
+    color: #cccccc;
+    font-size: 12px;
+    position: absolute;
+    top: unset;
+    bottom: 8px;
+    right: 50%;
+    background: transparent !important;
+}
  
 }
  
