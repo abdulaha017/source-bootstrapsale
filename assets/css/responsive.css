@@ -281,6 +281,15 @@ section.pageHeader {
 
 
 
+
+#progressbar li {
+    display: block;
+    padding-bottom: 15px;
+}
+#progressbar li:after {
+    display: none;
+}
+
  
 }
  
