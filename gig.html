@@ -30,6 +30,18 @@
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     </ul>
                     <ul class="right-area">
+                        <li class="loged-in">
+                            <a class="loged-in-trigger" href="javascript:void(0)">Hi, Abdulaha!</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Profile</a>
+                                    <a href="#">Saved searches</a>
+                                    <a href="#">saved agents</a>
+                                    <a href="#">saved listings</a>
+                                    <a href="#">logout</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <button type="button" class="btn btn-secondary btn-g dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Register </button>
                             <div class="dropdown-menu dropdown-menu-right" onclick="event.stopPropagation()" aria-labelledby="triggerId">
@@ -497,6 +509,16 @@
             $('.gallery').miv({
               image:'.cam',
               video:'.vid'
+            });
+
+            // loged in
+            $ (".loged-in-trigger").on ("click", function () {
+                $ (".loged-in ul").toggleClass ("toggled");
+                return false;
+            });
+
+            $(document).click(function (e) {
+                if (! $(e.target).hasClass('toggled')) $(".loged-in ul").removeClass('toggled');
             });
 
         });

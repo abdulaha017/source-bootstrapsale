@@ -3,6 +3,7 @@
 
 
     $ (document).ready (function () {
+
         $ ('.login-form').addClass ('display-block');
         $ ('.forgot-password').addClass ('display-hide');
         $ ('.forget-pass').on ('click', function () {
